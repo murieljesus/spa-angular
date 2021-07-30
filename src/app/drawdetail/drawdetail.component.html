@@ -1,0 +1,16 @@
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let detail of details">
+            <mat-card fxFlex class="mat-elevation-z4">
+                <mat-card-header>
+                    <img mat-card-image src={{detail.image}}>
+                </mat-card-header>
+                <mat-card-actions align="end">
+                    <button mat-button>LEFT</button>
+                    <button mat-button>SHARE</button>
+                    <div fxFlex></div>
+                    <button mat-button>RIGHT</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>

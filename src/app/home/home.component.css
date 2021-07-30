@@ -1,0 +1,7 @@
+div.content {
+    padding: 16px;
+}
+
+div.content mat-card {
+    width: 200px;
+}

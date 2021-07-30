@@ -1,0 +1,8 @@
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let detail of details">
+            <mat-card fxFlex class="mat-elevation-z4" *ngIf="detail">
+                <img mat-card-image src={{detail.image}}>
+            </mat-card>
+        </div>
+    </div>

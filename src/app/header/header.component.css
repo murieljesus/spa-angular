@@ -1,0 +1,19 @@
+.flexExpand {
+    flex: 1 1 auto;
+}
+
+.flexSpaceBetween {
+    justify-content: space-between;
+}
+
+span.micard {
+    height: 300px;
+    width: 600px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+span.spacing {
+    flex: 1 1 auto;
+}

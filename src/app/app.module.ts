@@ -11,17 +11,23 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatMenuModule} from '@angular/material/menu';
+
 //Components 
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { DrawdetailComponent } from './drawdetail/drawdetail.component';
+import { TabledrawComponent } from './tabledraw/tabledraw.component';
 import { AboutComponent } from './about/about.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
 //Services
 import { DetailService } from './services/detail.service';
 //Ngx
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
+import { PaginatePipe } from './pipes/paginate.pipe';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +37,9 @@ import {Ng2PageScrollModule} from 'ng2-page-scroll';
     FooterComponent,
     ContactComponent,
     DrawdetailComponent,
-    AboutComponent
+    AboutComponent,
+    PaginatePipe,
+    TabledrawComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +51,9 @@ import {Ng2PageScrollModule} from 'ng2-page-scroll';
     MatCardModule,
     MatGridListModule,
     FlexLayoutModule,
-    Ng2PageScrollModule
+    Ng2PageScrollModule,
+    MatPaginatorModule,
+    MatMenuModule
   ],
   providers: [DetailService],
   bootstrap: [AppComponent]

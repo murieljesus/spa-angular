@@ -1,8 +1,30 @@
 <mat-toolbar>
-    <button mat-button routerLinkActive="active" routerLink="/home"> Inicio</button>
-    <button mat-button routerLinkActive="active" pageScroll pageScrollInterruptible href="#contact"> Contact</button>
-    <button mat-button routerLinkActive="active" routerLink="/drawdetail"> All</button>
-    <button mat-button routerLinkActive="active" routerLink="/about">About Me</button>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+         <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLinkActive="active" routerLink="/home"> 
+            <mat-icon class="material-icons-round">
+                home
+            </mat-icon>
+            <span>Home</span>
+        </button>
+
+        <button mat-menu-item disabled routerLinkActive="active" pageScroll pageScrollInterruptible href="#contact"> 
+           <mat-icon class="material-icons-round">
+            alternate_email
+            </mat-icon> 
+            <span>Contact</span>
+        </button>
+
+        <button mat-menu-item routerLinkActive="active" routerLink="/tabledraw">
+           <mat-icon class="material-icons-round">
+               collections
+           </mat-icon> 
+           <span>All</span>
+        </button>
+
+    </mat-menu>
     <span class="spacing"></span>
     <span>
         <a routerLink="/home">Title</a>

@@ -15,5 +15,8 @@ export class DetailService {
   getFeatured(): Detail[]  {
     return DETAILS.filter((detail) => detail.featured);
   }
-  
+  getDetails(id: string): Detail {
+    return DETAILS.filter((detail) => (detail.id === id))[0];
+  }
+
 }

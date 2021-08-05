@@ -5,7 +5,7 @@ import { Detail } from '../shared/drawdetail';
 @Component({
   selector: 'app-tabledraw',
   templateUrl: './tabledraw.component.html',
-  styleUrls: ['./tabledraw.component.css']
+  styleUrls: ['./tabledraw.component.scss']
 })
 export class TabledrawComponent implements OnInit {
 

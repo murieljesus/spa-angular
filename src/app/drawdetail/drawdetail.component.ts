@@ -8,7 +8,7 @@ import { Detail } from '../shared/drawdetail';
 @Component({
   selector: 'app-drawdetail',
   templateUrl: './drawdetail.component.html',
-  styleUrls: ['./drawdetail.component.css']
+  styleUrls: ['./drawdetail.component.scss']
 })
 export class DrawdetailComponent implements OnInit {
 

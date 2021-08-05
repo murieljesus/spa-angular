@@ -23,10 +23,14 @@
     "@angular/platform-browser": "^12.1.4",
     "@angular/platform-browser-dynamic": "^12.1.4",
     "@angular/router": "^12.1.4",
+    "@material/image-list": "^12.0.0",
+    "bootstrap": "^5.0.2",
     "core-js": "^2.5.4",
     "ng2-page-scroll": "^4.0.0-beta.12",
     "ngx-pagination": "^5.1.1",
+    "popper.js": "^1.16.1",
     "rxjs": "~6.6.7",
+    "screenfull": "^3.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

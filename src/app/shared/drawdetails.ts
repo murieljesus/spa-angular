@@ -47,22 +47,18 @@ export const DETAILS: Detail[] =[
         featured: false
 },
 {        id: '11',
-        image:'/assets/images/ref1.png',
-        featured: false
-},
-{        id: '12',
         image:'/assets/images/scared.png',
         featured: true
 },
-{       id: '13',
+{       id: '12',
         image:'/assets/images/valantine.png',
         featured: false
 },
-{        id: '14',
+{        id: '13',
         image:'/assets/images/valantines.png',
         featured: false
 },
-{        id: '15',
+{        id: '14',
         image:'/assets/images/valantinesday.png',
         featured: false
 }

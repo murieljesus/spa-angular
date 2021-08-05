@@ -5,3 +5,8 @@ div.content {
 div.content mat-card {
     width: 200px;
 }
+
+.mat-card-image:first-child {
+    margin-top: -24px;
+    margin: auto;
+}

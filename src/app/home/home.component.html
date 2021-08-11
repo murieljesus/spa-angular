@@ -1,14 +1,16 @@
 <div>
-    <mat-card>
+    <mat-card class="color-div">
         <h2>
+
             this is me
         </h2>
     </mat-card>
 </div>
-<div class="row">
-    <div class="col-lg-3 mb-4 mb-lg-0 mt-3" *ngFor="let detail of details">
-        <img src={{detail.image}} class=" w-100 shadow-1-strong rounded mb-4" alt=" " *ngIf="detail" />
+<!-- Gallery -->
+<div class="row no-gutter ">
+    <div class="col-lg-3 mb-4 mb-lg-0 mt-3  view-overlay" *ngFor="let detail of details ">
+        <img src={{detail.image}} class=" w-100 shadow-2-strong rounded mb-4" alt=" " *ngIf="detail " />
+        <div class="mask flex-center rgba-red-slight"></div>
     </div>
 </div>
-
 <!-- Gallery -->

@@ -1,5 +1,5 @@
 //Default
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { AppComponent } from './app.component';
@@ -55,7 +55,7 @@ import { PaginatePipe } from './pipes/paginate.pipe';
     MatPaginatorModule,
     MatMenuModule
   ],
-  providers: [DetailService],
+  providers: [DetailService, Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,11 +2,7 @@ div.content {
     padding: 16px;
 }
 
-div.content mat-card {
-    width: 200px;
-}
-
-.mat-card-image:first-child {
-    margin-top: -24px;
-    margin: auto;
+img:hover {
+    border: solid 0.1rem;
+    color: rgb(255, 0, 98);
 }

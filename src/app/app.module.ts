@@ -27,6 +27,11 @@ import { DetailService } from './services/detail.service';
 //Ngx
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
 import { PaginatePipe } from './pipes/paginate.pipe';
+import { ShareButtonsModule } from 'ngx-sharebuttons/buttons';
+import { ShareIconsModule } from 'ngx-sharebuttons/icons';
+//NPM
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+
 
 
 @NgModule({
@@ -53,7 +58,10 @@ import { PaginatePipe } from './pipes/paginate.pipe';
     FlexLayoutModule,
     Ng2PageScrollModule,
     MatPaginatorModule,
-    MatMenuModule
+    MatMenuModule,
+    IvyCarouselModule,
+    ShareButtonsModule,
+    ShareIconsModule
   ],
   providers: [DetailService, Title],
   bootstrap: [AppComponent]

@@ -5,4 +5,15 @@ div.content {
 div.content mat-card {
     width: 150px;
     align-content: center;
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+
+mat-card-actions {
+    padding: 0px;
+    margin-bottom: 2px;
+}
+
+.sb-modern-dark .sb-wrapper .sb-icon {
+    min-width: 5em;
 }

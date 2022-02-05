@@ -5,3 +5,13 @@ div.content {
 div.content mat-card {
     width: 150px;
 }
+
+.card:hover {
+    box-shadow: -1px 10px 29px 0px rgba(0, 0, 0, 0.8);
+}
+
+.card {
+    transition: all .25s linear;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    flex-direction: unset;
+}

@@ -6,14 +6,15 @@
     </p>
 </div>
 <!-- Title Card -->
-
 <!-- Gallery -->
-<div class="row no-gutter ">
-    <div class="col-lg-3 mb-4 mb-lg-0 mt-3 draw " *ngFor="let detail of details ">
-        <img src={{detail.image}} class=" w-100 shadow-2-strong rounded mb-4 " alt={{detail.label}} *ngIf="detail " />
+<div class="row no-gutter justify-content-center ">
+    <div class=" col-lg-4  col-md-6 mb-4 mt-4 card px-0 mx-2 my-2 " *ngFor="let detail of details " [routerLink]="[ '/drawdetail', detail.id] ">
+        <img src={{detail.image}} class="w-100 shadow-1-strong rounded " alt=" " *ngIf="detail " />
     </div>
 </div>
 <!-- Gallery -->
+<!-- Button -->
 <div fxLayoutAlign="center center" class="p-4">
-    <button type="button " class="btn btn-primary btn-lg " routerLink="/tabledraw">More</button>
+    <button type="button " class="btn btn-primary btn-lg rounded-pill" routerLink="/tabledraw">More</button>
 </div>
+<!-- Button -->

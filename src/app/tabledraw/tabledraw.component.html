@@ -2,13 +2,13 @@
     <mat-card>
         <mat-card-header>
             <mat-card-title>
-                <h3 class="aling-content-center">This is just a sample of my designs.
+                <h3>This is just a sample of my designs.
                 </h3>
             </mat-card-title>
         </mat-card-header>
     </mat-card>
 </div>
-<div class="row no-gutters justify-content-center ">
+<div class="row no-gutter justify-content-center ">
     <div class="col-md-3 mb-3 mt-3 card px-0 mx-2 my-2 " *ngFor="let detail of details " [routerLink]="[ '/drawdetail', detail.id] ">
         <img src={{detail.image}} class="w-100 shadow-1-strong rounded " alt=" " *ngIf="detail " />
     </div>

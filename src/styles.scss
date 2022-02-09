@@ -1,33 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300&display=swap');
+
+/*global var */
+
+$font:'Azeret Mono',
+monospace;
+$blue:#3f51b5;
+$red:#f44336;
+
+/* global var*/
+
+html,
 body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: 'Varela Round', sans-serif;
-}
-
-.color-div {
-    color: #5a13aa;
-    background-color: rgb(219, 219, 219);
-}
-
-.color-toolbar {
-    background-color: rgb(255, 0, 98);
-    color: rgb(219, 219, 219);
-}
-
-.color-footer {
-    color: rgb(32, 32, 32);
-    background-color: #37b6ff;
-    height: 95px;
-    font-weight: 0.1rem;
-    margin-top: 90px;
-    bottom: 0px;
+    font-family: $font;
 }
 
 .row.no-gutter {
@@ -35,18 +20,6 @@ body {
     margin-left: 0;
 }
 
-.color-menu {
-    color: black;
-    background-color: #d7e0e6;
-}
-
 img {
     cursor: pointer;
-}
-
-h1.title {
-    height: 150px;
-    margin-top: 100px;
-    font-weight: initial;
-    font-family: 'Indie Flower', cursive;
 }
